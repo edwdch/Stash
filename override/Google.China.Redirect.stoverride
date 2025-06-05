@@ -1,0 +1,18 @@
+name: Google 重定向
+desc: 将 google.cn 的请求重定向到 google.com
+openUrl: "http://boxjs.com/#/app/BiliBili.Redirect"
+author: |-
+  Edward[https://github.com/edwdch]
+homepage: "https://github.com/edwdch/Stash"
+icon: "https://raw.githubusercontent.com/Vbaethon/HOMOMIX/main/Icon/Color/Google.png"
+category: Edward's Script
+date: "2025-06-05 14:32:00"
+version: 0.1
+
+http:
+  force-http-engine:
+    - "*.google.cn"
+  mitm:
+    - "*.google.cn"
+  url-rewrite:
+    - ^https?://(www\.)?(g|google)\.cn https://www.google.com 302
