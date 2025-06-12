@@ -7,7 +7,7 @@ homepage: "https://github.com/edwdch/Stash"
 icon: "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png"
 category: Edward's Script
 date: "2025-06-12 17:00:00"
-version: 0.2
+version: 0.3
 
 http:
   force-http-engine:
