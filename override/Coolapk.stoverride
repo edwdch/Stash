@@ -8,11 +8,11 @@ icon: "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px
 category: Edward's Script
 date: "2025-06-12 17:00:00"
 version: 0.2
+
 http:
   force-http-engine:
-    - ".csjplatform.com"
-mitm:
-  - ".csjplatform.com"
-url-rewrite:
-  # --- 穿山甲广告平台 (核心) ---
-  - ^https?://.*\.csjplatform\.com - reject
+    - "*.csjplatform.com"
+  mitm:
+    - "*.csjplatform.com"
+  url-rewrite:
+    - ^https?://.*\.csjplatform\.com - reject
