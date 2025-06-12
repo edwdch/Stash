@@ -1,0 +1,18 @@
+name: 酷安广告屏蔽
+desc: 屏蔽酷安开屏广告及信息流广告
+openUrl: "http://boxjs.com/#/app/BiliBili.Redirect"
+author: |-
+  Edward[https://github.com/edwdch]
+homepage: "https://github.com/edwdch/Stash"
+icon: "https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/CoolApk.png"
+category: Edward's Script
+date: "2025-06-12 17:00:00"
+version: 0.2
+http:
+  force-http-engine:
+    - ".csjplatform.com"
+mitm:
+  - ".csjplatform.com"
+url-rewrite:
+  # --- 穿山甲广告平台 (核心) ---
+  - ^https?://.*\.csjplatform\.com - reject
